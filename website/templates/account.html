@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Stan konta{% endblock %} {% block content%}
+
+<div class="row">
+    <div class="col-8">
+      <h1>Good day to you, </br> Stan!</h1>
+      <p>Account balance:</p>
+      <p class="acc-bal">1431,78 PLN</p>
+      <p>sQRytka balance:</p>
+      <p class="acc-bal">116,34 PLN</p>
+      <hr>
+      <p class="qr">
+        <a href="/generate_qr">
+        Generate QR code
+        </a>
+      </p>
+      <p class="qr"><a href="/scan_qr">Read QR code</a></p>
+    </div>
+  </div>
+{% endblock %}   

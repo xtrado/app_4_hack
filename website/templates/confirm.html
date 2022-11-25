@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+
+<div class="row">
+    <div class="col-8">
+        <p>Request for payment by</p>
+        <p class="buy">XYZ Poland sp z o.o.</p>
+        <p>Amount:</p>
+        <p class="buy">420,69 PLN</p>
+        <div class="d-flex flex-column">
+            <a role="button" class="btn btn-primary my-2" href="/account">Confirm</a>
+            <a role="button" class="btn btn-warning my-2" href="/mycoupons">Use coupon</a>
+            <a role="button" class="btn btn-light my-2" href="/account">Cancel</a>
+        </div>
+    </div>
+  </div>
+
+<p>{{ qr_val }}</p>
+
+{% endblock %}

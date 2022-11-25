@@ -1,0 +1,119 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content%}
+
+
+
+
+<div class="container">
+    <input type="text" list="suggestions" placeholder="Search for coupon" />
+    <datalist id="suggestions">
+      <option>Empik</option>
+      <option>Allegro</option>
+      <option>Shopee</option>
+      <option>Cinema city</option>
+      <option>Pizza hut</option>
+      <option>Pizza </option>
+      <option>Bookbook</option>
+      <option>Bookstore - empik</option>
+      <option>Bookbest</option>
+      <option>Bookstore - Ovelia</option>
+      <option>Bookstore Dominik</option>
+      <option>H&M</option>
+      <option>Clothes your you</option>
+      <option>Jewelerry premium</option>
+      <option>Shoes shoes shoes</option>
+      <option>Your meal</option>
+      <option>Big burger </option>
+      <option>Taco King</option>
+      <option>Nails Space</option>
+    </optgroup>
+  </datalist>
+
+</div>
+<br>
+<button type="button">Browse coupun categories</button>
+<br>
+<br>
+<script type="text/javascript">
+
+    function handleClick(evt) {
+      var node = evt.target || evt.srcElement;
+      if (node.name == 'edit') {
+        node.value = "Modify";
+      }
+    }
+    
+    </script>
+    
+    <table id="table1" border="1" onclick="handleClick(event);">
+        <thead>
+          <tr>
+              <th>Best offers
+        </thead>
+        <tbody>
+           <tr> 
+               <td>
+                Empik
+               <td>
+                gifcard
+                <td>
+                   <form name="f1" action="#" >
+                    <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                   </form>
+           <tr> 
+            <td>
+                RTV Euro Agd
+               <td>
+                gifcard
+                <td>
+                   <form name="f1" action="#" >
+                    <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                   </form>
+           <tr> 
+            <tr> 
+                <td>
+                    Amazon
+                   <td>
+                    gifcard
+                    <td>
+                       <form name="f1" action="#" >
+                        <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                       </form>
+               <tr> 
+                <tr> 
+                    <td>
+                        Allegro
+                       <td>
+                        gifcard
+                        <td>
+                           <form name="f1" action="#" >
+                            <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                           </form>
+                   <tr> 
+                    <tr> 
+                        <td>
+                           Shopee
+                           <td>
+                            gifcard
+                            <td>
+                               <form name="f1" action="#" >
+                                <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                               </form>
+                       <tr> 
+                        <tr> 
+                            <td>
+                               Lidl
+                               <td>
+                                gifcard
+                                <td>
+                                   <form name="f1" action="#" >
+                                    <input id="edit1" type="submit" name="Acquire" value="Acquired">
+                                   </form>
+                           <tr>                                                                
+       </tbody>
+    </table>
+
+asdadadsad
+asdasdad
+  <button onclick="location.href='/mycoupons'" type="button">
+    My coupons</button>
+{% endblock %}

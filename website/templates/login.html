@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <div class="row">
+      <div class="col-6">
+        <h4 class="mb-4">This is example login</h4>
+        <form method="POST">
+          <div class="form-group">
+            <label for="pinInput">Enter your 4 digit PIN number</label>
+            <input type="number" class="form-control" id="pin" name="pin" aria-describedby="pinHelp" placeholder="Enter PIN">
+            <small id="pinHelp" class="form-text text-muted">If you've forgotten it, please contact us.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <p class="text-muted">Please note that this has no connection to any sort of database, therefore it only validates if PIN actually has 4 digits.</p>
+
+      </div>
+    </div>
+
+    {% endblock %}

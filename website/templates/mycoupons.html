@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content%}
+
+
+
+<script type="text/javascript">
+
+    function handleClick(evt) {
+      var node = evt.target || evt.srcElement;
+      if (node.name == 'edit') {
+        node.value = "Modify";
+      }
+    }
+    
+</script>
+<p>Your available coupons</p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Shop</th>
+      <th>Amount</th>
+      <th>Expiry date</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XYZ</td>
+      <td>100 PLN</td>
+      <td>31.12.2024</td>
+      <td>
+        <button class="btn btn-warning">Activate</button>
+        <button class="btn btn-info">Gift</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Testmeout</td>
+      <td>50 PLN</td>
+      <td>31.06.2024</td>
+      <td>
+        <button class="btn btn-warning">Activate</button>
+        <button class="btn btn-info">Gift</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Loli</td>
+      <td>3.21 PLN</td>
+      <td>31.12.2025</td>
+      <td>
+        <button class="btn btn-warning">Activate</button>
+        <button class="btn btn-info">Gift</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

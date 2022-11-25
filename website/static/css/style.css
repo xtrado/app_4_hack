@@ -1,0 +1,22 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.acc-bal {
+    background-color: #056BAE;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 140px; 
+}
+
+.qr {
+    color: #056BAE;
+    border-style: 4px solid #056BAE;
+    padding: 10px;
+    width: 140px; 
+}
+
+.buy {
+    color: #D80909;
+    font-size: 28px
+}

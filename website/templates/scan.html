@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+{% block content%}
+<div class="row">
+    <div class="col-8">
+        <h1>Scan the QR code</h1>
+        <div>
+            <img src="{{ url_for('auth.video') }}" width="80%"/>
+        </div>
+        <a role="button" class="btn btn-primary" href="/confirm_payment">Scan</a>
+    </div>
+  </div>
+
+
+ {% endblock %}
